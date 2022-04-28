@@ -21,16 +21,13 @@ function getAllTest($db) {
 
 
 
-function saveExchange($db, $name, $id) {
+function saveExchange($db, $new_parser_actions_give, $new_parser_actions_get, $id) {
     $sql = "UPDATE hyaa_direction
-            SET new_parser_actions_give = :new_parser_actions_give
-            SET new_parser_actions_get = :new_parser_actions_get
-            WHERE id = :id
-    ";
-    $stmt = $db->prepare($sql);
-    $stmt->bindValue(':new_parser_actions_give', $name, PDO::PARAM_STR);
-    $stmt->bindValue(':new_parser_actions_get', $name, PDO::PARAM_STR);
+            SET new_parser_actions_give = :new_parser_actions_give, new_parser_actions_get = :new_parser_actions_get
+            WHERE id = :id";
+    $stmt =$this->$db->prepare($sql);
+    $stmt->bindValue(':new_parser_actions_give', $new_parser_actions_give, PDO::PARAM_STR);
+    $stmt->bindValue(':new_parser_actions_get', $new_parser_actions_get, PDO::PARAM_STR);
     $stmt->bindValue(':id', $id, PDO::PARAM_STR);
-
     $stmt->execute();
 }
