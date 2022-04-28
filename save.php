@@ -12,10 +12,11 @@
             <?php include 'db.php'; ?>
             <?php include 'api.php'; ?>
             <?php
-                    if(!empty($_POST['name']) && !empty($_POST['id'])) {
-                        $name = $_POST['name'];
+                    if(!empty($_POST['new_parser_actions_give']) && !empty($_POST['new_parser_actions_get']) && !empty($_POST['id'])) {
+                        $new_parser_actions_give = $_POST['new_parser_actions_give'];
+                        $new_parser_actions_get = $_POST['new_parser_actions_get'];
                         $id = $_POST['id'];
-                        saveExchange($db, $name, $id);
+                        saveExchange($db, $new_parser_actions_give, $new_parser_actions_get, $id);
                     }   else {
                         echo "<h1>Ошибка сохранения данных</h1>";
                     }
