@@ -32,8 +32,9 @@
                         <td><?php echo $test['course_get']; ?></td>
                         <form action="save.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $test['id'];?>">
-                        <td><input type="text" class="form-control" id="name" name="name" value="<?php echo $test['new_parser_actions_give'];?>"></td>
-                        <td><input type="text" class="form-control" id="name" name="name" value="<?php echo $test['new_parser_actions_get'];?>"></td>
+                        <td><input type="text" class="form-control" id="new_parser_actions_give" name="new_parser_actions_give" value="<?php echo $test['new_parser_actions_give'];?>"></td>
+                        <input type="hidden" name="id" value="<?php echo $test['id'];?>">
+                        <td><input type="text" class="form-control" id="new_parser_actions_get" name="new_parser_actions_get" value="<?php echo $test['new_parser_actions_get'];?>"></td>
                         <td><button type="submit" class="btn btn-default">Сохранить</td>
                         </form>
                     </tr>
