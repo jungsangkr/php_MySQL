@@ -1,6 +1,6 @@
 # php_MySQL
-Edit_php_MySQL
-![266362376_d1fafb0ae05a43af9dab3f0c0a360258](https://user-images.githubusercontent.com/92278688/166394843-a72f40e3-ed98-49e0-a2a0-be43eb4f9d30.jpg)
+Edit the database(MySQL), namely the rates at the rate directly on the site
+<img width="1392" alt="pic" src="https://user-images.githubusercontent.com/92278688/166395314-34c49e3c-0877-4aa5-8c79-cccd4a2d4dd0.png">
 helped solve the problem
-[Pro](https://otvet.mail.ru/profile/id296657995/) 
+[P.Sh](https://otvet.mail.ru/profile/id296657995/) 
 Thanks a lot for your help
