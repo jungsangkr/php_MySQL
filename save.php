@@ -9,14 +9,13 @@
     </head>
     <body>
         <div class="container-fluid">
-            <?php include 'db.php'; ?>
             <?php include 'api.php'; ?>
             <?php
-                    if(!empty($_POST['new_parser_actions_give']) && !empty($_POST['new_parser_actions_get']) && !empty($_POST['id'])) {
-                        $new_parser_actions_give = $_POST['new_parser_actions_give'];
-                        $new_parser_actions_get = $_POST['new_parser_actions_get'];
+                    if(!empty($_POST['give']) && !empty($_POST['get']) && !empty($_POST['id'])) {
+                        $give = $_POST['give'];
+                        $get = $_POST['get'];
                         $id = $_POST['id'];
-                        saveExchange($db, $new_parser_actions_give, $new_parser_actions_get, $id);
+                        saveExchange($db, $give, $get, $id);
                     }   else {
                         echo "<h1>Ошибка сохранения данных</h1>";
                     }
